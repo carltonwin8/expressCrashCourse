@@ -1,0 +1,19 @@
+{
+  "name": "expresscrashcourse",
+  "version": "1.0.0",
+  "description": "Code created from the [ExpressJS Crash Course](https://www.youtube.com/watch?v=gnsO8-xJ8rs).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-validator": "^4.1.1",
+    "mongodb": "^2.2.31",
+    "mongojs": "^2.4.1"
+  }
+}

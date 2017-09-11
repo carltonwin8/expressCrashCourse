@@ -1,0 +1,29 @@
+<% include partials/header %>
+    <% if (errors != undefined) { %>
+       <h1>Errors</h1>
+       <ul>
+         <% for (error in errors) { %>
+             <li><%= errors[error].msg %></li>
+         <% } %>
+       </ul>
+    <% } %>
+    <h1>Add Customer</h1>
+    <form method="post" action="<%=action%>">
+      <label>First Name</label><input type="text" name="first_name">
+      <label>Last Name</label><input type="text" name="last_name">
+      <label>Email</label><input type="text" name="email">
+      <label>Age</label><input type="text" name="age">
+      <input type="submit" value="Submit">
+    </form>
+    <h1>EJS</h1>
+    <ul>
+      <% users.forEach((user) => { %>
+          <li>
+            <%= user.first_name %>
+            <%= user.last_name %> -
+            <a id="<%=user._id%>" class="user" href="#">Delete</a>
+          </li>
+      <% }); %>
+    </ul>
+    <script src="js/main.js"></script>
+<% include partials/footer %>
