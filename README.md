@@ -10,9 +10,9 @@ Demos:
   - express
   - express-validator
   - body-parser
-  - mongo db (in a docker containers) and mongojs
+  - mongo db (in a docker containers) and mongodb
 
-
-Availablity at North Rim Grand Canyon on Friday 22th September.
-Demoi 19. up to 8 at the sight
-Demotte 2-39174276
+The code tests the npm module mongojs and mongodb.
+Use the mongodb module for all future projects because:
+  - it is the offical monogodb driver for node,
+  - the npm stats show that this module is far more popular

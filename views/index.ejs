@@ -21,7 +21,7 @@
           <li>
             <%= user.first_name %>
             <%= user.last_name %> -
-            <a id="<%=user._id%>" class="user" href="#">Delete</a>
+            <a id="<%=user._id%>" class="user" data-del="<%=del_action%>"href="#">Delete</a>
           </li>
       <% }); %>
     </ul>
